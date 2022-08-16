@@ -212,34 +212,39 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  
+  var rpta = nombre + " " + apellido;
+  return rpta;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  
+  var rpta = "Hola" + " " + nombre + "!";
+  return rpta;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  
+  var rpta = alto * ancho;
+  return rpta;
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
+  var rpta = lado * 4;
+  return rpta;
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
+ var rpta = (base * altura) / 2;
+ return rpta;
 }
 
 
@@ -247,7 +252,8 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+  var rpta = euro * 1.20;
+  return rpta;
 }
 
 
@@ -257,7 +263,25 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
+    if (letra.length > 1){
+    return "Dato incorrecto";
+  } else 
+    if (letra === 'a'){
+    return "Es vocal"
+  } else
+  if (letra === 'e'){
+    return "Es vocal";
+  } else
+  if (letra === 'i'){
+    return "Es vocal";
+  } else
+  if (letra === 'o'){
+    return "Es vocal";
+  } else
+  if (letra === 'u'){
+    return "Es vocal";
+  }else
+  return "Dato incorrecto";
 }
 
 
